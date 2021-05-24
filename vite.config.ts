@@ -6,6 +6,7 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import ViteComponents from 'vite-plugin-components';
 import PurgeIcons from 'vite-plugin-purge-icons';
 import ViteFonts from 'vite-plugin-fonts';
+import svgLoader from 'vite-svg-loader';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,7 +20,8 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-
+    // https://github.com/jpkleemans/vite-svg-loader
+    svgLoader(),
     // https://github.com/antfu/vite-plugin-components
     ViteComponents({
       extensions: ['vue'],

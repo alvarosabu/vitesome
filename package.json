@@ -26,6 +26,7 @@
     "vite-plugin-fonts": "^0.2.2",
     "vite-plugin-purge-icons": "^0.7.0",
     "vite-plugin-windicss": "^0.16.0",
+    "vite-svg-loader": "^1.5.1",
     "vue-tsc": "^0.1.6",
     "windicss": "^3.0.10"
   }

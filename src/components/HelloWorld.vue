@@ -1,3 +1,20 @@
+<script lang="ts">
+import { ref, defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'HelloWorld',
+  props: {
+    msg: {
+      type: String,
+      required: true,
+    },
+  },
+  setup: () => {
+    const count = ref(0);
+    return { count };
+  },
+});
+</script>
 <template>
   <div class="text-center text-md">
     <h1 class="font-serif font-bold font-bold text-4xl mb-8">{{ msg }}</h1>
@@ -29,22 +46,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue';
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup: () => {
-    const count = ref(0);
-    return { count };
-  },
-});
-</script>
 <style scoped>
 a {
   @apply text-cyan-400 hover:text-cyan-500 transition-all ease-out duration-100;
