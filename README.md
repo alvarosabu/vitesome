@@ -23,6 +23,19 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 <p align='center'><a href="https://alvaro-vitesome.netlify.app/"> Live Demo</a><p>
 
+## You can help me keep working on this project 💚
+
+- [Become a Sponsor on GitHub](https://github.com/sponsors/alvarosaburido)
+- [One-time donation via PayPal](https://paypal.me/alvarosaburido)
+
+<h4 align="center">Generous Unicorns 🦄</h4>
+
+<p align="center">
+  <a href="https://github.com/OmgImAlexis" target="_blank" rel="noopener noreferrer" ">
+    <img src="https://avatars.githubusercontent.com/u/6525926?v=4" height="72px"  style="border-radius: 100%; overflow: hidden; border: 4px solid #5EDCAE" alt="OmgImAlexis">
+  </a>
+</p>
+
 ## Pre-📦
 
 This repo brings few things pre-packed, so you don't need to install them manually everytime.
