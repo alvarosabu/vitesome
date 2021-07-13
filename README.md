@@ -21,7 +21,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 - Routing with [Vue Router 4](https://github.com/vuejs/vue-router-next)
 - Deploy on Netlify
 
-<p align='center'><a href="https://alvaro-vitesome.netlify.app/"> Live Demo</a><p>
+<p align='center'><a href="https://vitesome.alvarosaburido.dev/"> Live Demo</a><p>
 
 ## You can help me keep working on this project 💚
 
