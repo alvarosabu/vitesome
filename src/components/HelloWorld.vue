@@ -1,5 +1,6 @@
 <script lang="ts">
-import { ref, defineComponent } from 'vue';
+import { defineComponent } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -10,8 +11,9 @@ export default defineComponent({
     },
   },
   setup: () => {
-    const count = ref(0);
-    return { count };
+    const { t } = useI18n();
+    
+    return { t };
   },
 });
 </script>
@@ -20,7 +22,7 @@ export default defineComponent({
     <h1 class="font-serif font-bold font-bold text-4xl mb-8">{{ msg }}</h1>
 
     <p>
-      Recommended IDE setup:
+      {{t('recomended-ide')}}
       <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
       +
       <a
@@ -31,11 +33,11 @@ export default defineComponent({
       </a>
       or
       <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-      (if using
+      ({{t('if-using')}}
       <code>&lt;script setup&gt;</code>)
     </p>
 
-    <p>See <code>README.md</code> for more information.</p>
+    <p>{{t('See')}} <code>README.md</code> {{t('more-info')}}</p>
     <p class="mb-10">
       <a href="https://vitejs.dev/guide/features.html" target="_blank">
         Vite Docs

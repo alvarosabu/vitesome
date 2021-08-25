@@ -23,7 +23,7 @@ export default defineComponent({
       show.value = true;
     }, 1000);
 
-    return { locale, t, show, toggleLocales, isDark, toggleDark };
+    return { t, show, toggleLocales, toggleDark };
   },
 });
 </script>
@@ -42,12 +42,12 @@ export default defineComponent({
           v-if="show"
           alt="Vitesome logo"
           class="w-52 mx-auto mb-12"
-          :src="'logotype.svg'"
+          :src="'imagotype.svg'"
         />
       </transition>
     </div>
 
-    <HelloWorld :msg="t('hello') + ' 👋 !!'" />
+    <HelloWorld :msg="t('hello') + ' 👋 ' + t('welcome')" />
 
     <footer class="text-center">
       <ul class="flex justify-between w-1/3 mx-auto mb-8">

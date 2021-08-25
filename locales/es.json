@@ -1,5 +1,10 @@
 {
   "hello": "Hola",
   "made_by": "Hecho por",
-  "toggle_language": "Cambiar lenguaje"
+  "toggle_language": "Cambiar lenguaje",
+  "welcome": "bienvenidos a Vitesome",
+  "recomended-ide": "Configuración recomendada del IDE",
+  "if-using": "en caso de usar",
+  "See": "Revisa",
+  "more-info": "para mas información."
 }
