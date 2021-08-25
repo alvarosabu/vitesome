@@ -15,7 +15,7 @@ export default defineComponent({
         locales[(locales.indexOf(locale.value) + 1) % locales.length];
     };
 
-    const { isDark, toggleDark } = useTheme();
+    const { toggleDark } = useTheme();
 
     const show = ref(false);
 
