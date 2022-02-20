@@ -7,15 +7,15 @@
 
 # Vitesome 🌬 ⛵️
 
-> A simple opinionated Vue3 Starter Template with [Vite.js](https://vitejs.dev/)
+> A simple opinionated Vue Starter Template with [Vite.js](https://vitejs.dev/)
 
-This template should help get you started developing with Vue 3 and Typescript in Vite in a bliss.
+This template should help get you started developing with Vue and Typescript in Vite in a bliss.
 
 ## Features
 
-- [Vite](https://github.com/vitejs/vite) ⚡️, [Vue 3](https://github.com/vuejs/vue-next),
+- [Vite](https://github.com/vitejs/vite) ⚡️, [Vue](https://github.com/vuejs/vue),
 - 💨 [Windi CSS](https://github.com/windicss/windicss)
-- 📦 [Components auto importing](./src/components)
+- 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components)
 - [i18n](https://github.com/intlify/vue-i18n-next) out of the box 👩‍🎨
 - Easy to use svg icons based on [Iconify](https://iconify.design) 🔝
 - Routing with [Vue Router 4](https://github.com/vuejs/vue-router-next)
@@ -63,6 +63,17 @@ This repo brings few things pre-packed, so you don't need to install them manual
 - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
 - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
 
+## Check it out
+
+You can create a repo with this template [here](https://github.com/alvarosabu/vitesome/generate)
+
+Or if you prefer to do it manually with the cleaner git history
+
+```bash
+npx degit alvarosabu/vitesome my-vitesome-app
+cd my-vitesome-app
+pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+```
 ### Project setup
 
 ```

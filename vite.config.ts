@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite';
-import path from 'path';
+import { resolve } from 'pathe';
 import vue from '@vitejs/plugin-vue';
 import WindiCSS from 'vite-plugin-windicss';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import ViteComponents from 'vite-plugin-components';
+import Components from 'unplugin-vue-components/vite'
 import PurgeIcons from 'vite-plugin-purge-icons';
 import ViteFonts from 'vite-plugin-fonts';
 import svgLoader from 'vite-svg-loader';
@@ -15,7 +15,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '/@': path.resolve(__dirname, './src'),
+      '/@': resolve(__dirname, './src'),
     },
   },
   plugins: [
@@ -23,8 +23,9 @@ export default defineConfig({
     // https://github.com/jpkleemans/vite-svg-loader
     svgLoader(),
     // https://github.com/antfu/vite-plugin-components
-    ViteComponents({
+    Components({
       extensions: ['vue'],
+      dts: 'src/components.d.ts',
     }),
     // vhttps://github.com/stafyniaksacha/vite-plugin-fonts#readme
     ViteFonts({
@@ -45,7 +46,18 @@ export default defineConfig({
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
-      include: [path.resolve(__dirname, './locales/**')],
+      include: [resolve(__dirname, './locales/**')],
     }),
   ],
+
+  optimizeDeps: {
+    include: [
+      'vue',
+      'vue-router',
+      '@vueuse/core',
+    ],
+    exclude: [
+      'vue-demi',
+    ],
+  },
 });
