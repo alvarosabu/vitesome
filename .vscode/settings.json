@@ -4,5 +4,19 @@
   },
   "i18n-ally.localesPaths": ["locales"],
   "i18n-ally.sourceLanguage": "en",
-  "i18n-ally.keystyle": "flat"
+  "i18n-ally.keystyle": "flat",
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

@@ -3,7 +3,7 @@ import { resolve } from 'pathe';
 import vue from '@vitejs/plugin-vue';
 import WindiCSS from 'vite-plugin-windicss';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import Components from 'unplugin-vue-components/vite'
+import Components from 'unplugin-vue-components/vite';
 import PurgeIcons from 'vite-plugin-purge-icons';
 import ViteFonts from 'vite-plugin-fonts';
 import svgLoader from 'vite-svg-loader';
@@ -51,13 +51,15 @@ export default defineConfig({
   ],
 
   optimizeDeps: {
-    include: [
-      'vue',
-      'vue-router',
-      '@vueuse/core',
-    ],
-    exclude: [
-      'vue-demi',
-    ],
+    include: ['vue', 'vue-router', '@vueuse/core'],
+    exclude: ['vue-demi'],
+  },
+  // https://github.com/vitest-dev/vitest
+
+  test: {
+    environment: 'jsdom',
+    deps: {
+      inline: ['@vue', '@vueuse', 'vue-demi'],
+    },
   },
 });

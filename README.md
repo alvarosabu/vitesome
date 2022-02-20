@@ -55,10 +55,11 @@ This repo brings few things pre-packed, so you don't need to install them manual
 
 - [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs
 - [Vue I18n](https://github.com/intlify/vue-i18n-next) - Internationalization
-- Component auto-import with [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components)
+- Component auto-import with [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components)
 
 ### Dev tools
 
+- Unit tests with [Vitest](https://github.com/vitest-dev/vitest) & [Vue Test Utils](https://github.com/vuejs/test-utils).
 - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
 - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
 - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
@@ -74,16 +75,13 @@ npx degit alvarosabu/vitesome my-vitesome-app
 cd my-vitesome-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
-### Project setup
 
-```
-yarn
-```
+### Project setup
 
 ### Use it
 
 ```
-yarn dev
+pnpm dev
 ```
 
 This will serve the app at [http://localhost:3260](http://localhost:3260)
@@ -91,7 +89,7 @@ This will serve the app at [http://localhost:3260](http://localhost:3260)
 ### Build it
 
 ```
-yarn build
+pnpm build
 ```
 
 Builds the app for production to the `dist` folder.<br>
@@ -101,6 +99,14 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](#deployment) for more information.
+
+### Test it
+
+```
+pnpm test
+```
+
+Vitesome uses the combination of [Vitest](https://github.com/vitest-dev/vitest) with [Vue Test Utils](https://github.com/vuejs/test-utils) to test your app.
 
 ### Deployment
 

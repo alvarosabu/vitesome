@@ -1,25 +1,17 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup: () => {
-    const { t } = useI18n();
-    
-    return { t };
+const props = defineProps({
+  msg: {
+    type: String,
+    default: 'Hello World',
   },
 });
+const { t } = useI18n();
 </script>
 <template>
   <div class="text-center text-md">
-    <h1 class="font-serif font-bold font-bold text-4xl mb-8">{{ msg }}</h1>
+    <h1 class="font-serif font-bold font-bold text-4xl mb-8">{{ props.msg }}</h1>
 
     <p>
       {{t('recomended-ide')}}

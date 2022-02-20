@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`HelloWorld > should render 1`] = `
+"<div class=\\"text-center text-md\\" data-v-917f9b70=\\"\\">
+  <h1 class=\\"font-serif font-bold font-bold text-4xl mb-8\\" data-v-917f9b70=\\"\\">Hello World</h1>
+  <p data-v-917f9b70=\\"\\">recomended-ide <a href=\\"https://code.visualstudio.com/\\" target=\\"_blank\\" data-v-917f9b70=\\"\\">VSCode</a> + <a href=\\"https://marketplace.visualstudio.com/items?itemName=octref.vetur\\" target=\\"_blank\\" data-v-917f9b70=\\"\\"> Vetur </a> or <a href=\\"https://github.com/johnsoncodehk/volar\\" target=\\"_blank\\" data-v-917f9b70=\\"\\">Volar</a> (if-using <code data-v-917f9b70=\\"\\">&lt;script setup&gt;</code>) </p>
+  <p data-v-917f9b70=\\"\\">See <code data-v-917f9b70=\\"\\">README.md</code> more-info</p>
+  <p class=\\"mb-10\\" data-v-917f9b70=\\"\\"><a href=\\"https://vitejs.dev/guide/features.html\\" target=\\"_blank\\" data-v-917f9b70=\\"\\"> Vite Docs </a> | <a href=\\"https://v3.vuejs.org/\\" target=\\"_blank\\" data-v-917f9b70=\\"\\">Vue 3 Docs</a></p>
+</div>"
+`;
