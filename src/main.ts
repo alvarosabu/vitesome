@@ -11,17 +11,16 @@ import { Router } from '/@/router';
 // i18n
 import messages from '@intlify/vite-plugin-vue-i18n/messages';
 
+const i18n = createI18n({
+  locale: 'en',
+  messages,
+});
+
 // WindiCSS
 import 'virtual:windi.css';
 import 'virtual:windi-devtools';
 
 const app = createApp(App);
-
-//
-const i18n = createI18n({
-  locale: 'en',
-  messages,
-});
 
 app.use(i18n);
 
