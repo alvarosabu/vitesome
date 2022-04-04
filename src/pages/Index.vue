@@ -88,7 +88,7 @@ export default defineComponent({
         >{{ t('made_by') }}
         <a
           class="footer-link text-cyan-400 hover:text-cyan-500"
-          href="https://github.com/alvarosaburido"
+          href="https://github.com/alvarosabu/vitesome"
           rel="noreferrer"
           target="_blank"
           >Alvaro Saburido</a
