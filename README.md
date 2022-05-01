@@ -14,10 +14,10 @@ This template should help get you started developing with Vue and Typescript in 
 ## Features
 
 - [Vite](https://github.com/vitejs/vite) ⚡️, [Vue](https://github.com/vuejs/vue),
-- 💨 [Windi CSS](https://github.com/windicss/windicss)
+- 💨 [UnoCSS](https://github.com/unocss/unocss)
 - 📦 [Components auto importing](https://github.com/antfu/unplugin-vue-components)
 - [i18n](https://github.com/intlify/vue-i18n-next) out of the box 👩‍🎨
-- Easy to use svg icons based on [Iconify](https://iconify.design) 🔝
+- [Pure CSS Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons/) - use any icon as a single class or attribute 🔝
 - Routing with [Vue Router 4](https://github.com/vuejs/vue-router-next)
 - Deploy on Netlify
 
@@ -25,7 +25,7 @@ This template should help get you started developing with Vue and Typescript in 
 
 ## You can help me keep working on this project 💚
 
-- [Become a Sponsor on GitHub](https://github.com/sponsors/alvarosaburido)
+- [Become a Sponsor on GitHub](https://github.com/sponsors/alvarosabu)
 - [One-time donation via PayPal](https://paypal.me/alvarosaburido)
 
 <h4 align="center">Generous Unicorns 🦄</h4>
@@ -42,14 +42,12 @@ This repo brings few things pre-packed, so you don't need to install them manual
 
 ### Styling
 
-- [Windi CSS](https://github.com/windicss/windicss) with [`vite-plugin-windicss`](https://github.com/windicss/vite-plugin-windicss)
-- Default [Google Fonts](https://github.com/stafyniaksacha/vite-plugin-fonts#readme) with `vite-plugin-fonts`
+- [UnoCSS](https://github.com/unocss/unocss) with The instant on-demand Atomic CSS engine.
 
 ### Icons
 
 - [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-  - [PurgeIcons](https://github.com/antfu/purge-icons) with [`vite-plugin-purge-icons](vite-plugin-purge-icons) Think about TailwindCSS + PurgeCSS, but for Icons.
-  - Custom icons below `./assets/icons` with
+- Pure CSS Icons with [@unocss/preset-icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons)
 
 ### Plugins
 
@@ -60,7 +58,7 @@ This repo brings few things pre-packed, so you don't need to install them manual
 ### Dev tools
 
 - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
-- [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) - IDE support for Windi CSS
+- [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
 
 ## Check it out
