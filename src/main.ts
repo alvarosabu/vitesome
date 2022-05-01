@@ -1,8 +1,10 @@
 import { createApp } from 'vue';
-import App from './App.vue';
-import '@purge-icons/generated';
+import '@unocss/reset/tailwind.css'
+import 'uno.css'
 import { createI18n } from 'vue-i18n';
 
+
+import App from './App.vue';
 import './styles/base.css';
 
 // Router
@@ -15,10 +17,6 @@ const i18n = createI18n({
   locale: 'en',
   messages,
 });
-
-// WindiCSS
-import 'virtual:windi.css';
-import 'virtual:windi-devtools';
 
 const app = createApp(App);
 

@@ -1,31 +1,26 @@
-<script lang="ts">
+<script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 
-import { defineComponent, ref } from 'vue';
+import {  ref } from 'vue';
 import { useTheme } from '/@/composables';
 
-export default defineComponent({
-  name: 'Home',
-  setup() {
-    const { t, availableLocales, locale } = useI18n();
 
-    const toggleLocales = () => {
-      const locales = availableLocales;
-      locale.value =
-        locales[(locales.indexOf(locale.value) + 1) % locales.length];
-    };
+const { t, availableLocales, locale } = useI18n();
 
-    const { toggleDark } = useTheme();
+const toggleLocales = () => {
+  const locales = availableLocales;
+  locale.value =
+    locales[(locales.indexOf(locale.value) + 1) % locales.length];
+};
 
-    const show = ref(false);
+const { toggleDark } = useTheme();
 
-    setTimeout(() => {
-      show.value = true;
-    }, 1000);
+const show = ref(false);
 
-    return { t, show, toggleLocales, toggleDark };
-  },
-});
+setTimeout(() => {
+  show.value = true;
+}, 1000);
+
 </script>
 <template>
   <div class="container max-w-3xl mx-auto mt-60">
@@ -58,7 +53,7 @@ export default defineComponent({
             class="footer-link text-cyan-700 hover:text-cyan-500"
             :title="t('toggle_language')"
           >
-            <i class="iconify" :data-icon="'ant-design:translation-outlined'" />
+            <i class="i-ph-translate-bold" />
           </a>
         </li>
         <li class="cursor-pointer text-2xl">
@@ -68,18 +63,18 @@ export default defineComponent({
             class="text-cyan-700 hover:text-cyan-500"
             :title="t('toggle_theme')"
           >
-            <i class="iconify" :data-icon="'mdi:theme-light-dark'" />
+            <i i="ph-sun dark:ph-moon" />
           </a>
         </li>
         <li class="cursor-pointer text-2xl">
           <a
-            href="https://github.com/alvarosaburido"
+            href="https://github.com/alvarosabu"
             rel="noreferrer"
             target="_blank"
             class="footer-link text-cyan-700 hover:text-cyan-500"
             title="Github repo"
           >
-            <i class="iconify" :data-icon="'mdi:github'" />
+            <i class="i-ph-github-logo" />
           </a>
         </li>
       </ul>

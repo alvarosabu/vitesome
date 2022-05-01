@@ -1,21 +1,15 @@
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
+defineProps({
+  msg: {
+    type: String,
+    default: '',
   },
-  setup: () => {
-    const { t } = useI18n();
-    
-    return { t };
-  },
-});
+
+})
+
+const { t } = useI18n();
 </script>
 <template>
   <div class="text-center text-md">
