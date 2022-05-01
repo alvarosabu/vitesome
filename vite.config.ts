@@ -1,11 +1,9 @@
 import { defineConfig } from 'vite';
 import Unocss from 'unocss/vite'
-
 import { resolve } from 'pathe';
 import vue from '@vitejs/plugin-vue';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import Components from 'unplugin-vue-components/vite'
-import PurgeIcons from 'vite-plugin-purge-icons';
 import ViteFonts from 'vite-plugin-fonts';
 import svgLoader from 'vite-svg-loader';
 
@@ -36,11 +34,6 @@ export default defineConfig({
     }),
 
     Unocss({ /* options */ }),
-
-    // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
-    PurgeIcons({
-      /* PurgeIcons Options */
-    }),
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
