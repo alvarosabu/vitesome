@@ -75,13 +75,13 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ### Project setup
 
 ```
-yarn
+pnpm i
 ```
 
 ### Use it
 
 ```
-yarn dev
+pnpm run dev
 ```
 
 This will serve the app at [http://localhost:3260](http://localhost:3260)
@@ -89,7 +89,7 @@ This will serve the app at [http://localhost:3260](http://localhost:3260)
 ### Build it
 
 ```
-yarn build
+pnpm run build
 ```
 
 Builds the app for production to the `dist` folder.<br>
